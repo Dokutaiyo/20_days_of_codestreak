@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>20 Days Of JavaScript Codestreak</title>
+  </head>
+  <body>
+    <h1>20 Days Of JavaScript Codestreak:10 Day</h1>
+    <h2>JSON parsing</h2>
+    <div id="list"></div>
+    <script>
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          const list = document.getElementById('list');
+          data.forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = item;
+            list.appendChild(li);
+          });
+        });
+    </script>
+  </body>
+</html>

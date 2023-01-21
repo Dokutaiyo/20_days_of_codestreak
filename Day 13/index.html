@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Storage Example</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <br>
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age">
+      <br>
+      <button type="button" id="save-button">Save</button>
+      <button type="button" id="load-button">Load</button>
+      <button type="button" id="clear-button">Clear</button>
+    </form>
+    <script>
+      // Add event listeners to the buttons
+      document.getElementById("save-button").addEventListener("click", function() {
+        // Get the values from the input fields
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+
+        // Store the values in local storage
+        localStorage.setItem("name", name);
+        localStorage.setItem("age", age);
+      });
+
+      document.getElementById("load-button").addEventListener("click", function() {
+        // Retrieve the values from local storage
+        let name = localStorage.getItem("name");
+        let age = localStorage.getItem("age");
+
+        // Set the values to the input fields
+        document.getElementById("name").value = name;
+        document.getElementById("age").value = age;
+      });
+
+      document.getElementById("clear-button").addEventListener("click", function() {
+        // Clear the values from local storage
+        localStorage.removeItem("name");
+        localStorage.removeItem("age");
+
+        // Clear the values from the input fields
+        document.getElementById("name").value = "";
+        document.getElementById("age").value = "";
+      });
+    </script>
+  </body>
+</html>

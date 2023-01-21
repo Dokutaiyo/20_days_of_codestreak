@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>20 Days Of JavaScript Codestreak</title>
+  </head>
+  <body>
+    <h1>20 Days Of JavaScript Codestreak:10 Day</h1>
+    <h2>Debugging Example</h2>
+    <button id="my-button">Click Me</button>
+    <script>
+      // Add an event listener to the button
+      document.getElementById('my-button').addEventListener('click', function() {
+        let x = 5;
+        let y = x + 1;
+        let z = y * 2;
+
+        // Add the debugger statement to pause execution here
+        debugger;
+
+        console.log(z);
+      });
+    </script>
+  </body>
+</html>
