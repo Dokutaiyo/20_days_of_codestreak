@@ -1,0 +1,50 @@
+/* Define the layout and styling for the calculator */
+#calculator {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Style the display */
+  #display {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border: none;
+    background-color: #f9f9f9;
+    text-align: right;
+  }
+  
+  /* Style the buttons */
+  #buttons button {
+    width: 75px;
+    height: 60px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style the operator buttons */
+  .operator {
+    background-color: #f9f9f9;
+    color: #000;
+  }
+  
+  /* Style the equal button */
+  .equal {
+    background-color: #fc7f3f;
+    color: #000;
+  }
+  
+  /* Style the clear button */
+  #clear {
+    background-color: #f9f9f9;
+    color: #000;
+  }
+  
